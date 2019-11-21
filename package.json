@@ -1,0 +1,22 @@
+{
+  "name": "devfest-webtech-2019-codelab",
+  "version": "1.0.0",
+  "description": "CodeLab for DevFest WebTech 2019",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab.git"
+  },
+  "keywords": [
+    "codelab"
+  ],
+  "author": "brightparagon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab/issues"
+  },
+  "homepage": "https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab#readme"
+}
