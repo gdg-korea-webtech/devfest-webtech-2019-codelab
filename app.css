@@ -18,7 +18,7 @@ html, body {
 
 header {
   display: flex;
-  width: 400px;
+  width: 450px;
   height: 50px;
   font-size: 30px;
   font-weight: bolder;
@@ -29,7 +29,7 @@ header {
 
 .searchInput {
   margin-top: 30px;
-  width: 400px;
+  width: 450px;
   height: 40px;
   font-size: 20px;
   font-weight: 400;
@@ -43,6 +43,32 @@ header {
 
 .recipeList {
   display: flex;
-  min-height: 400px;
+  flex-direction: column;
+  width: 450px;
+  list-style: none;
+  padding: 5px;
+  height: 500px;
+  overflow-y: scroll;
   border: 2px solid seagreen;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+  width: 100%;
+  border-bottom: 2px solid gold;
+  margin-bottom: 4px;
+}
+
+.recipeColumn {
+  width: 270px;
+  padding-left: 10px;
+}
+
+.recipeInstructions {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

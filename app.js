@@ -1,5 +1,7 @@
 import { debounce } from 'lodash-es'
 
+import Meal from './meal'
+
 const apiEndPoint = 'https://www.themealdb.com/api/json/v1/1/search.php'
 
 const searchInput = document.querySelector('.searchInput')
@@ -20,8 +22,11 @@ const debouncedInputHandler = debounce(({ target: { value: inputValue } }) => {
     method: 'GET',
   })
   .then((response) => response.json())
-  .then((response) => {
-    console.log(response)
+  .then(({ meals }) => {
+    recipeList.innerHTML = meals
+      .map((meal) => new Meal(meal))
+      .map((mealInstance) => mealInstance.renderToString())
+      .join('')
   })
 
   previousInputValue = inputValue
