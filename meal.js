@@ -16,6 +16,8 @@ class Meal {
       strYoutube,
     } = this.mealData
 
+    const embededYoutubeUrl = strYoutube.replace('/watch?v=', '/embed/')
+
     return `
       <li class="recipe">
         <div>
