@@ -18,6 +18,8 @@ const debouncedInputHandler = debounce(({ target: { value: inputValue } }) => {
     return
   }
 
+  recipeList.innerHTML = '<h3>Loading...</h3>'
+
   fetch(`${apiEndPoint}?f=${inputValue}`, {
     method: 'GET',
   })
