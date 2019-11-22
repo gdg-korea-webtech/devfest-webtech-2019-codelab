@@ -4,7 +4,8 @@
   "description": "CodeLab for DevFest WebTech 2019",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack -p --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab/issues"
   },
-  "homepage": "https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab#readme"
+  "homepage": "https://github.com/gdg-korea-webtech/devfest-webtech-2019-codelab#readme",
+  "dependencies": {
+    "lodash-es": "^4.17.15",
+    "rxjs": "^6.5.3",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
 }
